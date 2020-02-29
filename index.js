@@ -97,34 +97,46 @@ async function getIpadSummaries(start, limit) {
             let gen = item.title.match(/ (\d)(st|th|nd|rd) gen|mini (\d)|ipad (\d+[^t])/i);
             if (gen) {
                 gen = gen[1]||gen[3]||gen[4];
-                console.log(gen)
+                line.push(gen)
             }
+            else line.push("");
             let gb = item.title.match(/\d+GB/);
             if (gb) line.push(gb[0]);
+            else line.push("");
             let style = item.title.match(/pro|mini|air|mini/i);
             if (style) line.push(style[0]);
+            else line.push("");
             let size = item.title.match(/(\d+([.]\d)?) ?(\"|inch|in)/i);
             if (size) line.push(size[1]);
+            else line.push("");
             let color = item.title.match(/gold|silver|gray|grey|black/i);
             if (color) line.push(color[0]);
+            else line.push("");
             let wifi = item.title.match(/wi-fi|wifi/i);
             if (wifi) line.push(wifi[0]);
+            else line.push("");
             let cellular = item.title.match(/sprint|verizon|4g[^b]|lte|cellular/i);
             if (cellular) line.push(cellular[0]);
+            else line.push("");
             let unlocked = item.title.match(/unlocked/i);
             if (unlocked) line.push(unlocked[0]);
+            else line.push("");
             let model = item.title.match(/M.*\/A/) || item.title.match(/A\d{4}/);
             if (model) line.push(model[0]);
+            else line.push("");
             let time = item.title.match(/mid|early|late/i);
             if (time) line.push(time[0]);
+            else line.push("");
             let year = item.title.match(/20\d\d/);
             if (year) line.push(year[0]);
-            console.log(line.
+            else line.push("");
+            console.log(line.join(","));
         }
     });
 }
 
 async function main() {
+    console.log(`price,
     getIpadSummaries(0,100);
     getIpadSummaries(101,100);
 }
