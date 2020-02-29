@@ -133,15 +133,16 @@ async function main$() {
     let results = [];
     let start = 0;
     let count = 100;
-    for(let start = 0; start <  {
-        console.error(start);
+    for(let start = 0; start < 3000; start += count) {
+        // console.error(start);
         let ipads = await getIpadSummaries$(start,count);
-        console.error(ipads.length);
+        // console.error(ipads.length);
         if (!ipads) break;
-        results.concat(ipads);
+        results = results.concat(ipads);
         start += count;
+        console.error(results.length);
     }
-    //console.log(ipads);
+    console.log(results);
 }
 
 main$();
