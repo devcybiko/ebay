@@ -26,6 +26,7 @@ async function ebayCategoryTree() {
 }
 
 async function ebaySearch(categoryId, query) {
+    // https://api.ebay.com/buy/browse/v1/item_summary/search?category_ids=20863&limit=3
     const url = `https://api.ebay.com/buy/browse/v1/item_summary/search`;
     const request = {
         method: 'get',
@@ -33,13 +34,15 @@ async function ebaySearch(categoryId, query) {
         headers: {
             Authorization: `Bearer ${authToken}`,
         },
-        category_ids: categoryId,
-        q: query,
+    };
+    const params = {
+        category_ids: `20863`,
+        limit: 10,
     }
     try {
         console.log(request);
         const instance = axios.create(request);
-        const response = await instance.request(request);
+        const response = await instance.request(params);
         return response.data;
     } catch (error) {
         console.log(error.response);
@@ -88,6 +91,9 @@ function ebay() {
 }
 
 async function main() {
+    // let tree = await ebayCategoryTree();
+    // console.log(JSON.stringify(tree, null, 2));
+    // return;
     const tabletCategory = `58058`;
     let data = await ebaySearch(tabletCategory, 'ipad');
     console.log(JSON.stringify(data, null, 2));
