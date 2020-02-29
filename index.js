@@ -84,16 +84,16 @@ async function getIpadSummaries$(start, limit) {
     const results = [];
     let data = await ebaySearch$(tabletCategory, 'ipad', start, limit);
     data.itemSummaries.forEach(item => {
-        console.error(JSON.stringify(item, null, 2));
-        exit;
+        // console.error(JSON.stringify(item, null, 2));
         if (item.itemGroupType) {
-            // console.log(`**${item.title}`);
-            // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
+            console.error(`**${item.title}`);
+            console.error(`  ${item.itemId} ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
         } else {
             //console.error(`${item.title}`);
             // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
             //console.log(item.title);
             // console.error(JSON.stringify(item, null, 2));
+            let itemId = item.itemId;
             let style = item.title.match(/pro|mini|air/i) || [];
             let gen = item.title.match(/ (\d)(st|th|nd|rd) gen|mini (\d)|ipad (\d+[^trns])/i) || [];
             let size = item.title.match(/(\d+([.]\d)?) ?(\"|inch|in)/i) || [];
@@ -107,6 +107,7 @@ async function getIpadSummaries$(start, limit) {
             let color = item.title.match(/gold|silver|gray|grey|black/i) || [];
 
             ipad = {
+                itemId: itemId,
                 price: item.price.value,
                 condition: item.condition.toLowerCase(),
                 style: style[0] ||  "ipad",
