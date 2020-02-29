@@ -81,9 +81,11 @@ async function ebayFeed(categoryId) {
 
 async function getIpadSummaries(start, limit) {
     const tabletCategory = `58058`;
+    const results = [];
     let data = await ebaySearch(tabletCategory, 'ipad', start, limit);
     // console.log(data);
     data.itemSummaries.forEach(item => {
+        let ipad = {};
         // console.log(JSON.stringify(item, null, 2));
         if (item.itemGroupType) {
             // console.log(`**${item.title}`);
@@ -94,36 +96,28 @@ async function getIpadSummaries(start, limit) {
             let line = [];
             //console.log(item.title);
             console.error(JSON.stringify(item, null, 2));
-            line.push(item.price.value);
-            line.push(item.condition);
             let style = item.title.match(/pro|mini|air/i);
-            if (style) line.push(style[0]);
-            else line.push("ipad");
             let gen = item.title.match(/ (\d)(st|th|nd|rd) gen|mini (\d)|ipad (\d+[^trns])/i);
-            if (gen) {
-                gen = gen[1]||gen[3]||gen[4];
-                line.push(gen)
-            }
-            else line.push("");
             let size = item.title.match(/(\d+([.]\d)?) ?(\"|inch|in)/i);
-            if (size) line.push(size[1]);
-            else line.push("");
             let gb = item.title.match(/\d+GB/);
-            if (gb) line.push(gb[0]);
-            else line.push("");
             let model = item.title.match(/M.*\/A/) || item.title.match(/A\d{4}/);
-            if (model) line.push(model[0]);
-            else line.push("");
             let time = item.title.match(/mid|early|late[^s]/i);
-            if (time) line.push(time[0]);
-            else line.push("");
             let year = item.title.match(/20\d\d/);
-            if (year) line.push(year[0]);
-            else line.push("");
             let wifi = item.title.match(/wi-fi|wifi/i);
+            let cellular = item.title.match(/sprint|verizon|4g[^b]|lte|cellular/i);
+
+            ipad = {
+                price: item.price.value,
+                condition: item.condition.toLowerCase(),
+                style: style[0] ? style[0].toLowerCase() : "ipad",
+                gen: gen ? gen[1]||gen[3]||gen[4] : "",
+                size: size ? size[1] : "",
+                storage: gb? gb[0] : "",
+                model: model ? model[0] : "",
+                season: time ? time[0] : "",
+                year: year ? year[0] : "",
             if (wifi) line.push(wifi[0]);
             else line.push("");
-            let cellular = item.title.match(/sprint|verizon|4g[^b]|lte|cellular/i);
             if (cellular) line.push(cellular[0]);
             else line.push("");
             let unlocked = item.title.match(/unlocked/i);
