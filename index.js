@@ -105,6 +105,8 @@ async function getIpadSummaries(start, limit) {
             let year = item.title.match(/20\d\d/);
             let wifi = item.title.match(/wi-fi|wifi/i);
             let cellular = item.title.match(/sprint|verizon|4g[^b]|lte|cellular/i);
+            let unlocked = item.title.match(/unlocked/i);
+            let color = item.title.match(/gold|silver|gray|grey|black/i);
 
             ipad = {
                 price: item.price.value,
@@ -116,18 +118,12 @@ async function getIpadSummaries(start, limit) {
                 model: model ? model[0] : "",
                 season: time ? time[0] : "",
                 year: year ? year[0] : "",
-            if (wifi) line.push(wifi[0]);
-            else line.push("");
-            if (cellular) line.push(cellular[0]);
-            else line.push("");
-            let unlocked = item.title.match(/unlocked/i);
-            if (unlocked) line.push(unlocked[0]);
-            else line.push("");
-            let color = item.title.match(/gold|silver|gray|grey|black/i);
-            if (color) line.push(color[0]);
-            else line.push("");
-            line.push(item.itemWebUrl);
-            console.log(line.join(","));
+                wifi: wifi ?  wifi[0] : "",
+                cellular: cellular ? cellular[0] : "",
+                unlocked: unlocked[0] || "",
+                color: color[0] || "",
+                url: item.itemWebUrl,
+            }
         }
     });
 }
