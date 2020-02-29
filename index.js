@@ -113,6 +113,7 @@ async function getIpadSummaries$(start, limit) {
             console.error(JSON.stringify(item, null, 2));
             let result = await ebayGroup$(item.itemGroupHref);
             console.error(JSON.stringify(result, null, 2));
+            process.exit();
             //console.error(`  ${item.itemId} ${item.itemWebUrl} ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
         } else {
             //console.error(`${item.title}`);
