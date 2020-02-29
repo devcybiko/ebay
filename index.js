@@ -25,7 +25,7 @@ async function ebayCategoryTree() {
     }
 }
 
-async function ebaySearch(categoryId, query, start, limit) {
+async function ebaySearch(categoryId, query, start=0, limit=100) {
     const url = `https://api.ebay.com/buy/browse/v1/item_summary/search`;
     const request = {
         method: 'get',
@@ -89,15 +89,16 @@ async function getIpadSummaries() {
             // console.log(`**${item.title}`);
             // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
         } else {
-            console.log(`${item.title}`);
-            console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
+            // console.log(`${item.title}`);
+            // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
+            let gen = item.title.match(/ (\d.*?) [Gg]en/);
+            console.log(gen);
         }
     });
 }
 
 async function main() {
-    const tabletCategory = `58058`;
-    ebayFeed(tabletCategory);
+    getIpadSummaries();
 }
 
 main();
