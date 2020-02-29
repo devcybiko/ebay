@@ -89,7 +89,7 @@ async function getIpadSummaries$(start, limit) {
             // console.log(`**${item.title}`);
             // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
         } else {
-            console.error(`${item.title}`);
+            //console.error(`${item.title}`);
             // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
             //console.log(item.title);
             // console.error(JSON.stringify(item, null, 2));
@@ -121,7 +121,7 @@ async function getIpadSummaries$(start, limit) {
                 color: color[0] || "",
                 url: item.itemWebUrl,
             }
-            console.log(ipad);
+            //console.log(ipad);
             results.push(ipad);
         }
     });
@@ -133,14 +133,13 @@ async function main$() {
     let results = [];
     let start = 0;
     let count = 100;
-    while(true) {
+    for(let start = 0; start <  {
         console.error(start);
-        let ipads = getIpadSummaries(start,count);
+        let ipads = await getIpadSummaries$(start,count);
         console.error(ipads.length);
         if (!ipads) break;
         results.concat(ipads);
         start += count;
-        break;
     }
     //console.log(ipads);
 }
