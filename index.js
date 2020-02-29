@@ -105,7 +105,7 @@ async function getIpadSummaries$(start, limit) {
     const results = [];
     let titles = [];
     let data = await ebaySearch$(tabletCategory, 'ipad', start, limit);
-    data.itemSummaries.forEach(item => {
+    data.itemSummaries.forEach(async item => {
         // console.error(JSON.stringify(item, null, 2));
         if (item.itemGroupType) {
             titles.push(item.title);
