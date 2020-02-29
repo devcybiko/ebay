@@ -34,15 +34,17 @@ async function ebaySearch(categoryId, query) {
         headers: {
             Authorization: `Bearer ${authToken}`,
         },
+        params: {
+            q: query,
+            category_ids: categoryId,
+            limit: 100,
+            //offset: 101,
+        },
     };
-    const params = {
-        category_ids: `20863`,
-        limit: 10,
-    }
     try {
-        console.log(request);
+        //console.log(request);
         const instance = axios.create(request);
-        const response = await instance.request(params);
+        const response = await instance.request(request);
         return response.data;
     } catch (error) {
         console.log(error.response);
@@ -96,7 +98,11 @@ async function main() {
     // return;
     const tabletCategory = `58058`;
     let data = await ebaySearch(tabletCategory, 'ipad');
-    console.log(JSON.stringify(data, null, 2));
+    console.log(data);
+    data.itemSummaries.forEach(item => {
+        console.log(JSON.stringify(item, null, 2));
+        //console.log(`${item.price.value} ${item.condition} ${item.color} ${item.localizedAspects[0].value}`);
+    });
 }
 
 main();
