@@ -7,7 +7,7 @@ const url2 = `https://api.ebay.com/commerce/taxonomy/v1_beta/get_default_categor
 const url4 = `https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=184057411986`;
 const url5 = `https://api.ebay.com/commerce/taxonomy/v1_beta/category_tree/0/get_category_subtree?category_id=58058`;
 
-async function ebayCategoryTree() {
+async function ebayCategoryTree$() {
     const url = `https://api.ebay.com/commerce/taxonomy/v1_beta/category_tree/0`;
     const request = {
         method: 'get',
@@ -25,7 +25,7 @@ async function ebayCategoryTree() {
     }
 }
 
-async function ebaySearch(categoryId, query, start=0, limit=100) {
+async function ebaySearch$(categoryId, query, start=0, limit=100) {
     const url = `https://api.ebay.com/buy/browse/v1/item_summary/search`;
     const request = {
         method: 'get',
@@ -55,7 +55,7 @@ async function ebaySearch(categoryId, query, start=0, limit=100) {
         return {itemSummaries: []};
     }
 }
-async function ebayFeed(categoryId) {
+async function ebayFeed$(categoryId) {
     const url = `https://api.ebay.com/buy/feed/v1_beta/item?feed_scope=&category_id=625`;
     const request = {
         method: 'get',
@@ -79,32 +79,31 @@ async function ebayFeed(categoryId) {
 }
 
 
-async function getIpadSummaries(start, limit) {
+async function getIpadSummaries$(start, limit) {
     const tabletCategory = `58058`;
     const results = [];
-    let data = await ebaySearch(tabletCategory, 'ipad', start, limit);
-    // console.log(data);
+    let data = await ebaySearch$(tabletCategory, 'ipad', start, limit);
     data.itemSummaries.forEach(item => {
         // console.log(JSON.stringify(item, null, 2));
         if (item.itemGroupType) {
             // console.log(`**${item.title}`);
             // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
         } else {
-            // console.log(`${item.title}`);
+            console.error(`${item.title}`);
             // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
             //console.log(item.title);
-            console.error(JSON.stringify(item, null, 2));
+            // console.error(JSON.stringify(item, null, 2));
             let style = item.title.match(/pro|mini|air/i) || [];
             let gen = item.title.match(/ (\d)(st|th|nd|rd) gen|mini (\d)|ipad (\d+[^trns])/i) || [];
             let size = item.title.match(/(\d+([.]\d)?) ?(\"|inch|in)/i) || [];
             let gb = item.title.match(/\d+GB/) || [];
             let model = item.title.match(/M.*\/A/) || item.title.match(/A\d{4}/) || [];
-            let time = item.title.match(/mid|early|late[^s]/i);
-            let year = item.title.match(/20\d\d/);
-            let wifi = item.title.match(/wi-fi|wifi/i);
-            let cellular = item.title.match(/sprint|verizon|4g[^b]|lte|cellular/i);
-            let unlocked = item.title.match(/unlocked/i);
-            let color = item.title.match(/gold|silver|gray|grey|black/i);
+            let time = item.title.match(/mid|early|late[^s]/i) || [];
+            let year = item.title.match(/20\d\d/) || [];
+            let wifi = item.title.match(/wi-fi|wifi/i) || [];
+            let cellular = item.title.match(/sprint|verizon|4g[^b]|lte|cellular/i) || [];
+            let unlocked = item.title.match(/unlocked/i) || [];
+            let color = item.title.match(/gold|silver|gray|grey|black/i) || [];
 
             ipad = {
                 price: item.price.value,
@@ -122,13 +121,14 @@ async function getIpadSummaries(start, limit) {
                 color: color[0] || "",
                 url: item.itemWebUrl,
             }
+            console.log(ipad);
             results.push(ipad);
         }
     });
     return results;
 }
 
-async function main() {
+async function main$() {
     console.log(`price,condition,style,gen,size,gb,model,time,year,wifi,cellular,unlocked,color,url`);
     let results = [];
     let start = 0;
@@ -136,13 +136,13 @@ async function main() {
     while(true) {
         console.error(start);
         let ipads = getIpadSummaries(start,count);
-        console.error(ipads);
+        console.error(ipads.length);
         if (!ipads) break;
         results.concat(ipads);
         start += count;
         break;
     }
-    console.log(ipads);
+    //console.log(ipads);
 }
 
-main();
+main$();
