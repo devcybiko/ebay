@@ -91,8 +91,17 @@ async function getIpadSummaries() {
         } else {
             // console.log(`${item.title}`);
             // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
-            let gen = item.title.match(/ (\d.*?) [Gg]en/);
-            console.log(gen);
+            console.log(item.title);
+            let gen = item.title.match(/ (\d(st|th|nd|rd)) [Gg]en/);
+            if (gen) console.log(gen[1])
+            let gb = item.title.match(/\d+GB/);
+            if (gb) console.log(gb[0]);
+            let style = item.title.match(/pro|mini|air/i);
+            if (style) console.log(style[0]);
+            let size = item.title.match(/(\d+[.]\d) ?(\"|inch|in)/i);
+            if (size) console.log(size[1]);
+            let color = item.title.match(/gold|silver|gray/i);
+            if (color) console.log(color[0]);
         }
     });
 }
