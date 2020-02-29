@@ -6,9 +6,10 @@ const authToken = files.read('./ebaytoken.txt').trim();
 const url = `https://api.ebay.com/commerce/taxonomy/v1_beta/category_tree/0`;
 const url2 = `https://api.ebay.com/commerce/taxonomy/v1_beta/get_default_category_tree_id?marketplace_id=EBAY_US`;
 const url3 = `https://api.ebay.com/buy/browse/v1/item_summary/search?filter=priceCurrency:USD`;
+const url4 = `https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=184057411986`;
 const request = {
     method: 'get',
-    url: url3,
+    url: url4,
     headers: {
         Authorization: `Bearer ${authToken}`,
     },
@@ -31,7 +32,10 @@ const request = {
 const instance = axios.create(request);
 instance.request(request)
     .then(response => {
-        console.log(JSON.stringify(response.data, null, 2));
+        //console.log(JSON.stringify(response.data, null, 2));
+        request.data.forEach(item => {
+            console.log(item.title);
+            console.log(`${item.price.value} ${item.condition} ${item.color} ${item.
         console.log("SUCCESS");
     })
     .catch(error => {
