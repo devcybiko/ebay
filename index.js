@@ -100,7 +100,10 @@ async function main() {
     let data = await ebaySearch(tabletCategory, 'ipad');
     console.log(data);
     data.itemSummaries.forEach(item => {
-        console.log(JSON.stringify(item, null, 2));
+        // console.log(JSON.stringify(item, null, 2));
+        if (item.itemGroupType) {
+            console.log(`**${item.title}`);
+            console.log(`  ${${item.price.value} ${item.condition} ${item.color}`);
         //console.log(`${item.price.value} ${item.condition} ${item.color} ${item.localizedAspects[0].value}`);
     });
 }
