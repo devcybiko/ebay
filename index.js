@@ -26,7 +26,6 @@ async function ebayCategoryTree() {
 }
 
 async function ebaySearch(categoryId, query) {
-    // https://api.ebay.com/buy/browse/v1/item_summary/search?category_ids=20863&limit=3
     const url = `https://api.ebay.com/buy/browse/v1/item_summary/search`;
     const request = {
         method: 'get',
@@ -38,6 +37,8 @@ async function ebaySearch(categoryId, query) {
             q: query,
             category_ids: categoryId,
             limit: 100,
+            fieldgroups: "ASPECT_REFINEMENTS,CATEGORY_REFINEMENTS,CONDITION_REFINEMENTS,BUYING_OPTION_REFINEMENTS",
+
             //offset: 101,
         },
     };
@@ -45,52 +46,17 @@ async function ebaySearch(categoryId, query) {
         //console.log(request);
         const instance = axios.create(request);
         const response = await instance.request(request);
+        if (!response.data) {
+            console.log(response);
+            return [];
+        }
         return response.data;
     } catch (error) {
         console.log(error.response);
+        return 
     }
 }
 
-function ebay() {
-    const request = {
-        method: 'get',
-        url: url5,
-        headers: {
-            Authorization: `Bearer ${authToken}`,
-        },
-
-        // `params` are the URL parameters to be sent with the request
-        // Must be a plain object or a URLSearchParams object
-        params: {
-            category_ids: tabletCategory,
-            q: `ipad`,
-            // filter: `price:[200..500]`, 
-            limit: `100`,
-
-        },
-
-        timeout: 1000, // default is `0` (no timeout)
-        responseType: 'json', // default
-        responseEncoding: 'utf8', // default
-        //maxContentLength: 20000,
-    };
-    const instance = axios.create(request);
-    instance.request(request)
-        .then(response => {
-            console.log(JSON.stringify(response.data, null, 2));
-            response.data.items.forEach(item => {
-                console.log(item.title);
-                console.log(`${item.price.value} ${item.condition} ${item.color} ${item.localizedAspects[0].value}`);
-            });
-            console.log("SUCCESS");
-        })
-        .catch(error => {
-            console.log(error);
-            // console.log(error.config);
-            // console.log(error.response);
-            console.log("ERROR");
-        });
-}
 
 async function main() {
     // let tree = await ebayCategoryTree();
@@ -98,13 +64,16 @@ async function main() {
     // return;
     const tabletCategory = `58058`;
     let data = await ebaySearch(tabletCategory, 'ipad');
-    console.log(data);
+    // console.log(data);
     data.itemSummaries.forEach(item => {
         // console.log(JSON.stringify(item, null, 2));
         if (item.itemGroupType) {
-            console.log(`**${item.title}`);
-            console.log(`  ${${item.price.value} ${item.condition} ${item.color}`);
-        //console.log(`${item.price.value} ${item.condition} ${item.color} ${item.localizedAspects[0].value}`);
+            // console.log(`**${item.title}`);
+            // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
+        } else {
+            console.log(`${item.title}`);
+            console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
+        }
     });
 }
 
