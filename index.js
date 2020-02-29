@@ -79,9 +79,9 @@ async function ebayFeed(categoryId) {
 }
 
 
-async function getIpadSummaries() {
+async function getIpadSummaries(start, limit) {
     const tabletCategory = `58058`;
-    let data = await ebaySearch(tabletCategory, 'ipad');
+    let data = await ebaySearch(tabletCategory, 'ipad', start, limit);
     // console.log(data);
     data.itemSummaries.forEach(item => {
         // console.log(JSON.stringify(item, null, 2));
@@ -91,38 +91,42 @@ async function getIpadSummaries() {
         } else {
             // console.log(`${item.title}`);
             // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
+            let line = [];
             console.log(item.title);
+            line.push(item.price.value);
             let gen = item.title.match(/ (\d)(st|th|nd|rd) gen|mini (\d)|ipad (\d+[^t])/i);
             if (gen) {
                 gen = gen[1]||gen[3]||gen[4];
                 console.log(gen)
             }
             let gb = item.title.match(/\d+GB/);
-            if (gb) console.log(gb[0]);
+            if (gb) line.push(gb[0]);
             let style = item.title.match(/pro|mini|air|mini/i);
-            if (style) console.log(style[0]);
+            if (style) line.push(style[0]);
             let size = item.title.match(/(\d+([.]\d)?) ?(\"|inch|in)/i);
-            if (size) console.log(size[1]);
+            if (size) line.push(size[1]);
             let color = item.title.match(/gold|silver|gray|grey|black/i);
-            if (color) console.log(color[0]);
+            if (color) line.push(color[0]);
             let wifi = item.title.match(/wi-fi|wifi/i);
-            if (wifi) console.log(wifi[0]);
+            if (wifi) line.push(wifi[0]);
             let cellular = item.title.match(/sprint|verizon|4g[^b]|lte|cellular/i);
-            if (cellular) console.log(cellular[0]);
+            if (cellular) line.push(cellular[0]);
             let unlocked = item.title.match(/unlocked/i);
-            if (unlocked) console.log(unlocked[0]);
-            let model = item.title.match(/M.*\/A/);
-            if (model) console.log(model[0]);
-            let 
+            if (unlocked) line.push(unlocked[0]);
+            let model = item.title.match(/M.*\/A/) || item.title.match(/A\d{4}/);
+            if (model) line.push(model[0]);
+            let time = item.title.match(/mid|early|late/i);
+            if (time) line.push(time[0]);
             let year = item.title.match(/20\d\d/);
-            if (year) console.log(year[0]);
-
+            if (year) line.push(year[0]);
+            console.log(line.
         }
     });
 }
 
 async function main() {
-    getIpadSummaries();
+    getIpadSummaries(0,100);
+    getIpadSummaries(101,100);
 }
 
 main();
