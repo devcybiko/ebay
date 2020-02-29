@@ -3,9 +3,11 @@ const axios = require('axios');
 const files = require('glstools').files;
 
 const authToken = files.read('./ebaytoken.txt').trim();
+const url = `https://api.ebay.com/commerce/taxonomy/v1_beta/get_default_category_tree_id?marketplace_id=EBAY_US`;
+const otherUrl = `https://api.ebay.com/buy/browse/v1/item_summary/search?filter=priceCurrency:USD`;
 const request = {
     method: 'get',
-    url: `https://api.ebay.com/buy/browse/v1/item_summary/search`,
+    url: url,
     headers: {
         Authorization: `Bearer ${authToken}`,
     },
@@ -15,20 +17,19 @@ const request = {
     params: {
         category_ids: `108765`,
         q: `Beatles`,
-        filter: [`price:[200..500]`, `priceCurrency:USD`],
+        filter: `price:[200..500]`, 
         limit: `10`
     },
 
     timeout: 1000, // default is `0` (no timeout)
     responseType: 'json', // default
     responseEncoding: 'utf8', // default
-    maxContentLength: 2000,
+    maxContentLength: 20000,
 };
 const instance = axios.create(request);
 instance.request(request)
     .then(response => {
-        console.log(response.data.url);
-        console.log(response.data.explanation);
+        console.log(response.data);
         console.log("SUCCESS");
     })
     .catch(error => {
