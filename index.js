@@ -99,7 +99,7 @@ async function getIpadSummaries(start, limit) {
             let style = item.title.match(/pro|mini|air/i);
             if (style) line.push(style[0]);
             else line.push("ipad");
-            let gen = item.title.match(/ (\d)(st|th|nd|rd|r) gen|mini (\d)|ipad (\d+[^t])/i);
+            let gen = item.title.match(/ (\d)(st|th|nd|rd) gen|mini (\d)|ipad (\d+[^trns])/i);
             if (gen) {
                 gen = gen[1]||gen[3]||gen[4];
                 line.push(gen)
