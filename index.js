@@ -92,8 +92,11 @@ async function getIpadSummaries() {
             // console.log(`${item.title}`);
             // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
             console.log(item.title);
-            let gen = item.title.match(/ (\d(st|th|nd|rd)) [Gg]en/);
-            if (gen) console.log(gen[1])
+            let gen = item.title.match(/ (\d)(st|th|nd|rd) gen|mini (\d)|ipad (\d+[^t])/i);
+            if (gen) {
+                gen = gen[1]||gen[3]||gen[4];
+                console.log(gen)
+            }
             let gb = item.title.match(/\d+GB/);
             if (gb) console.log(gb[0]);
             let style = item.title.match(/pro|mini|air|mini/i);
@@ -104,12 +107,15 @@ async function getIpadSummaries() {
             if (color) console.log(color[0]);
             let wifi = item.title.match(/wi-fi|wifi/i);
             if (wifi) console.log(wifi[0]);
-            let cellular = item.title.match(/sprint|verizon|4g|lte|cellular/i);
+            let cellular = item.title.match(/sprint|verizon|4g[^b]|lte|cellular/i);
             if (cellular) console.log(cellular[0]);
             let unlocked = item.title.match(/unlocked/i);
             if (unlocked) console.log(unlocked[0]);
             let model = item.title.match(/M.*\/A/);
             if (model) console.log(model[0]);
+            let 
+            let year = item.title.match(/20\d\d/);
+            if (year) console.log(year[0]);
 
         }
     });
