@@ -3,9 +3,6 @@ const axios = require('axios');
 const files = require('glstools').files;
 
 const authToken = files.read('./ebaytoken.txt').trim();
-const url2 = `https://api.ebay.com/commerce/taxonomy/v1_beta/get_default_category_tree_id?marketplace_id=EBAY_US`;
-const url4 = `https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=184057411986`;
-const url5 = `https://api.ebay.com/commerce/taxonomy/v1_beta/category_tree/0/get_category_subtree?category_id=58058`;
 
 async function ebayCategoryTree$() {
     const url = `https://api.ebay.com/commerce/taxonomy/v1_beta/category_tree/0`;
@@ -55,6 +52,30 @@ async function ebaySearch$(categoryId, query, start=0, limit=100) {
         return {itemSummaries: []};
     }
 }
+
+async function ebayGroup$(url) {
+    const request = {
+        method: 'get',
+        url: url,
+        headers: {
+            Authorization: `Bearer ${authToken}`,
+        },
+    };
+    try {
+        //console.log(request);
+        const instance = axios.create(request);
+        const response = await instance.request(request);
+        if (!response.data) {
+            console.log(response);
+            return {itemSummaries: []};
+        }
+        return response.data;
+    } catch (error) {
+        console.log(error.response);
+        return {itemSummaries: []};
+    }
+}
+
 async function ebayFeed$(categoryId) {
     const url = `https://api.ebay.com/buy/feed/v1_beta/item?feed_scope=&category_id=625`;
     const request = {
@@ -90,6 +111,8 @@ async function getIpadSummaries$(start, limit) {
             titles.push(item.title);
             console.error(`**${item.title}`);
             console.error(JSON.stringify(item, null, 2));
+            let result = await ebayGroup$(item.itemGroupHref);
+            console.error(JSON.stringify(result, null, 2));
             //console.error(`  ${item.itemId} ${item.itemWebUrl} ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
         } else {
             //console.error(`${item.title}`);
