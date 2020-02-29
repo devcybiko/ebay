@@ -1,0 +1,3069 @@
+{
+  "warnings": [
+    {
+      "errorId": 12002,
+      "domain": "API_BROWSE",
+      "category": "REQUEST",
+      "message": "The priceCurrency filter value is invalid. For the valid values, refer to the API call documentation.",
+      "parameters": [
+        {
+          "name": "fieldName",
+          "value": "priceCurrency"
+        },
+        {
+          "name": "filterValue",
+          "value": "USD"
+        }
+      ]
+    },
+    {
+      "errorId": 12012,
+      "domain": "API_BROWSE",
+      "category": "REQUEST",
+      "message": "A valid 'price' filter and a valid 'priceCurrency' filter is necessary to filter based on price."
+    }
+  ],
+  "href": "https://api.ebay.com/buy/browse/v1/item_summary/search?q=ipad&limit=50&category_ids=58058&offset=0",
+  "total": 761799,
+  "next": "https://api.ebay.com/buy/browse/v1/item_summary/search?q=ipad&limit=50&category_ids=58058&offset=50",
+  "limit": 50,
+  "offset": 0,
+  "itemSummaries": [
+    {
+      "itemId": "v1|184057411986|691748891309",
+      "title": "New Sealed Apple 10.2\" iPad 7th Gen 32GB 128GB Gray Gold Silver WiFi 2019 Model",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=184057411986",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mvVN1s6DbbHhR8eW8C_yy6w/s-l225.jpg"
+      },
+      "price": {
+        "value": "285.00",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|184057411986|691748891309",
+      "seller": {
+        "username": "best_dealever-2008",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 2453
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/New-Sealed-Apple-10-2-iPad-7th-Gen-32GB-128GB-Gray-Gold-Silver-WiFi-2019-Model/184057411986?hash=item2adaad3992:m:mvVN1s6DbbHhR8eW8C_yy6w",
+      "itemLocation": {
+        "postalCode": "116**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/184057411986_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/184057411986_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/184057411986_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/184057411986_5_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/184057411986_6_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/184057411986_7_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|182782774412|0",
+      "title": "Apple iPad 5th Gen 2017 32GB, Wi-Fi , 9.7Inch - Space Gray - GRADE A (R)",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/EwUAAOSwn45ZxV3x/s-l225.jpg"
+      },
+      "price": {
+        "value": "189.85",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|182782774412|0",
+      "seller": {
+        "username": "eazytrade84",
+        "feedbackPercentage": "99.3",
+        "feedbackScore": 85168
+      },
+      "marketingPrice": {
+        "originalPrice": {
+          "value": "207.35",
+          "currency": "USD"
+        },
+        "discountPercentage": "8",
+        "discountAmount": {
+          "value": "17.50",
+          "currency": "USD"
+        }
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/NzUwWDk1MQ==/z/EwUAAOSwn45ZxV3x/$_0.JPG?set_id=8800005007"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "235203726",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-5th-Gen-2017-32GB-Wi-Fi-9-7Inch-Space-Gray-GRADE-A-R/182782774412?hash=item2a8eb3cc8c:g:EwUAAOSwn45ZxV3x",
+      "itemLocation": {
+        "postalCode": "450**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/182782774412_2_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|254418474688|554036646859",
+      "title": "2019 Apple iPad 7th Gen 32/128GB WiFi 10.2\" Retina/A10 Chip/TouchID Latest Model",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=254418474688",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mhuViarF3769feInFW2yRDw/s-l225.jpg"
+      },
+      "price": {
+        "value": "395.00",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|254418474688|554036646859",
+      "seller": {
+        "username": "arisdeals",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 4099
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/2019-Apple-iPad-7th-Gen-32-128GB-WiFi-10-2-Retina-A10-Chip-TouchID-Latest-Model/254418474688?hash=item3b3c85d6c0:m:mhuViarF3769feInFW2yRDw",
+      "itemLocation": {
+        "postalCode": "115**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|173609728979|472288820267",
+      "title": "Apple iPad 4 WiFi + GSM Unlocked | Black or White | 16GB 32GB 64GB 128GB",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=173609728979",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mZbvDkDP1QnlsRPeZhDUuYA/s-l225.jpg"
+      },
+      "price": {
+        "value": "109.85",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|173609728979|472288820267",
+      "seller": {
+        "username": "eazytrade84",
+        "feedbackPercentage": "99.3",
+        "feedbackScore": 85177
+      },
+      "condition": "Seller refurbished",
+      "conditionId": "2500",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "129518645",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-4-WiFi-GSM-Unlocked-Black-or-White-16GB-32GB-64GB-128GB/173609728979?hash=item286bf23bd3:m:mZbvDkDP1QnlsRPeZhDUuYA",
+      "itemLocation": {
+        "postalCode": "450**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/173609728979_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/173609728979_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/173609728979_4_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|274075070008|574158879371",
+      "title": "New Sealed Apple 10.2\" iPad 7th Gen 32GB 128GB Gray Gold Silver WiFi 2019 Model",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=274075070008",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mf6aMWRxLoMqycUSmSTBg-A/s-l225.jpg"
+      },
+      "price": {
+        "value": "293.00",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|274075070008|574158879371",
+      "seller": {
+        "username": "ehexatech",
+        "feedbackPercentage": "99.5",
+        "feedbackScore": 3950
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/New-Sealed-Apple-10-2-iPad-7th-Gen-32GB-128GB-Gray-Gold-Silver-WiFi-2019-Model/274075070008?hash=item3fd025ae38:m:mf6aMWRxLoMqycUSmSTBg-A",
+      "itemLocation": {
+        "postalCode": "930**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/274075070008_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/274075070008_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/274075070008_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/274075070008_5_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/274075070008_6_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/274075070008_7_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|182877477758|690843977486",
+      "title": "Apple iPad Air 2nd | WiFi + Unlocked | 16GB 32GB 64GB 128GB I Gray Silver Gold",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=182877477758",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mW3b8ispOsQugG7V0brzC0Q/s-l225.jpg"
+      },
+      "price": {
+        "value": "199.85",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|182877477758|690843977486",
+      "seller": {
+        "username": "eazytrade84",
+        "feedbackPercentage": "99.3",
+        "feedbackScore": 85178
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Air-2nd-WiFi-Unlocked-16GB-32GB-64GB-128GB-I-Gray-Silver-Gold/182877477758?hash=item2a9458db7e:m:mW3b8ispOsQugG7V0brzC0Q",
+      "itemLocation": {
+        "postalCode": "450**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/182877477758_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/182877477758_3_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|132213998058|0",
+      "title": "Apple 9.7\" iPad Wifi 32GB Space Gray MP2F2LL/A 5th Gen 2017 Model",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/KMEAAOSw-3FZMh9C/s-l225.jpg"
+      },
+      "price": {
+        "value": "169.00",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|132213998058|0",
+      "seller": {
+        "username": "quickshipelectronics",
+        "feedbackPercentage": "99.8",
+        "feedbackScore": 327105
+      },
+      "marketingPrice": {
+        "originalPrice": {
+          "value": "329.00",
+          "currency": "USD"
+        },
+        "discountPercentage": "49",
+        "discountAmount": {
+          "value": "160.00",
+          "currency": "USD"
+        },
+        "priceTreatment": "LIST_PRICE"
+      },
+      "condition": "Open box",
+      "conditionId": "1500",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/ODAxWDgwMA==/z/KMEAAOSw-3FZMh9C/$_0.GIF?set_id=8800005007"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "235203726",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-9-7-iPad-Wifi-32GB-Space-Gray-MP2F2LL-A-5th-Gen-2017-Model/132213998058?hash=item1ec89181ea:g:KMEAAOSw-3FZMh9C",
+      "itemLocation": {
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/132213998058_2_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false,
+      "priceDisplayCondition": "ONLY_SHOW_ON_REQUEST"
+    },
+    {
+      "itemId": "v1|182430753761|485006672783",
+      "title": "Apple iPad mini 2 16GB 32GB 64GB Wi-Fi, 7.9in Retina - Space Gray Silver (R)",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=182430753761",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mUBFIIs-EA2iY0w9ny0hTSw/s-l225.jpg"
+      },
+      "price": {
+        "value": "129.85",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|182430753761|485006672783",
+      "seller": {
+        "username": "eazytrade84",
+        "feedbackPercentage": "99.3",
+        "feedbackScore": 85167
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "172927397",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-mini-2-16GB-32GB-64GB-Wi-Fi-7-9in-Retina-Space-Gray-Silver-R/182430753761?hash=item2a79b863e1:m:mUBFIIs-EA2iY0w9ny0hTSw",
+      "itemLocation": {
+        "postalCode": "450**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/182430753761_2_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|362815633599|0",
+      "title": "Apple 10.2\" iPad 7th Generation  32GB Wi-Fi Space Gray MW742LL/A (Latest Model)",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/4V4AAOSwPGBd0Dn5/s-l225.jpg"
+      },
+      "price": {
+        "value": "269.00",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|362815633599|0",
+      "seller": {
+        "username": "quickshipelectronics",
+        "feedbackPercentage": "99.8",
+        "feedbackScore": 327103
+      },
+      "marketingPrice": {
+        "originalPrice": {
+          "value": "329.00",
+          "currency": "USD"
+        },
+        "discountPercentage": "18",
+        "discountAmount": {
+          "value": "60.00",
+          "currency": "USD"
+        },
+        "priceTreatment": "LIST_PRICE"
+      },
+      "condition": "Open box",
+      "conditionId": "1500",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/NjAwWDYwMA==/z/4V4AAOSwPGBd0Dn5/$_0.PNG?set_id=2"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "4034210179",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-10-2-iPad-7th-Generation-32GB-Wi-Fi-Space-Gray-MW742LL-A-Latest-Model/362815633599?hash=item54797f38bf:g:4V4AAOSwPGBd0Dn5",
+      "itemLocation": {
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/362815633599_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/362815633599_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/362815633599_4_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false,
+      "priceDisplayCondition": "ONLY_SHOW_ON_REQUEST"
+    },
+    {
+      "itemId": "v1|181695992377|0",
+      "title": "Apple iPad Air 1st Generation 16GB, Wi-Fi, 9.7in - Silver - Grade A Conditio (R)",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/5QwAAOSwYHxWMnsb/s-l225.jpg"
+      },
+      "price": {
+        "value": "119.85",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|181695992377|0",
+      "seller": {
+        "username": "eazytrade84",
+        "feedbackPercentage": "99.3",
+        "feedbackScore": 85175
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/NzE1WDc4Nw==/z/5QwAAOSwYHxWMnsb/$_0.JPG?set_id=880000500F"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "170289501",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Air-1st-Generation-16GB-Wi-Fi-9-7in-Silver-Grade-A-Conditio-R/181695992377?hash=item2a4decd239:g:5QwAAOSwYHxWMnsb",
+      "itemLocation": {
+        "postalCode": "450**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|142828414030|0",
+      "title": "Apple 9.7\" iPad 6th Gen 32GB Space Gray Wi-Fi MR7F2LL/A 2018 Model",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/lDMAAOSwSatbHNX~/s-l225.jpg"
+      },
+      "price": {
+        "value": "239.00",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|142828414030|0",
+      "seller": {
+        "username": "quickshipelectronics",
+        "feedbackPercentage": "99.8",
+        "feedbackScore": 327105
+      },
+      "marketingPrice": {
+        "originalPrice": {
+          "value": "329.00",
+          "currency": "USD"
+        },
+        "discountPercentage": "27",
+        "discountAmount": {
+          "value": "90.00",
+          "currency": "USD"
+        },
+        "priceTreatment": "LIST_PRICE"
+      },
+      "condition": "Open box",
+      "conditionId": "1500",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/ODAxWDgwMA==/z/lDMAAOSwSatbHNX~/$_0.JPG?set_id=2"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "243957293",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-9-7-iPad-6th-Gen-32GB-Space-Gray-Wi-Fi-MR7F2LL-A-2018-Model/142828414030?hash=item21413ca44e:g:lDMAAOSwSatbHNX~",
+      "itemLocation": {
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/142828414030_2_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false,
+      "priceDisplayCondition": "ONLY_SHOW_ON_REQUEST"
+    },
+    {
+      "itemId": "v1|223898160611|522645621742",
+      "title": "Apple 10.2\" iPad 7th Gen (2019 Models) 32GB/128GB Gray/Gold/Silver",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=223898160611",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mIXTvMb6G1HVgwylyhvrtFQ/s-l225.jpg"
+      },
+      "price": {
+        "value": "299.00",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|223898160611|522645621742",
+      "seller": {
+        "username": "marina1874",
+        "feedbackPercentage": "98.0",
+        "feedbackScore": 4579
+      },
+      "condition": "Used",
+      "conditionId": "3000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-10-2-iPad-7th-Gen-2019-Models-32GB-128GB-Gray-Gold-Silver/223898160611?hash=item34215ecde3:m:mIXTvMb6G1HVgwylyhvrtFQ",
+      "itemLocation": {
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|251980109783|0",
+      "title": "Apple iPad 2 16GB, Wi-Fi,  9.7in - Black (MC769LL/A) - Warranty Included",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/tAgAAOSwl8NVbKJK/s-l225.jpg"
+      },
+      "price": {
+        "value": "68.99",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|251980109783|0",
+      "seller": {
+        "username": "bigdeals",
+        "feedbackPercentage": "99.3",
+        "feedbackScore": 383562
+      },
+      "marketingPrice": {
+        "originalPrice": {
+          "value": "199.99",
+          "currency": "USD"
+        },
+        "discountPercentage": "66",
+        "discountAmount": {
+          "value": "131.00",
+          "currency": "USD"
+        },
+        "priceTreatment": "LIST_PRICE"
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/NTMwWDU1MA==/z/tAgAAOSwl8NVbKJK/$_0.JPG?set_id=880000500F"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "103127916",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-2-16GB-Wi-Fi-9-7in-Black-MC769LL-A-Warranty-Included/251980109783?hash=item3aab2f57d7:g:tAgAAOSwl8NVbKJK",
+      "itemLocation": {
+        "postalCode": "085**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/251980109783_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/251980109783_3_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false,
+      "priceDisplayCondition": "ONLY_SHOW_ON_REQUEST"
+    },
+    {
+      "itemId": "v1|303501155591|0",
+      "title": "New Sealed Apple iPad 7th Gen. 32GB Gold, Wi-Fi Only MW762LL/A Tablet",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/uGEAAOSwHwldx0no/s-l225.jpg"
+      },
+      "price": {
+        "value": "274.95",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|303501155591|0",
+      "seller": {
+        "username": "steevesj",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 7701
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/MTAwMFg2OTQ=/z/uGEAAOSwHwldx0no/$_0.JPG?set_id=8800005007"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "19034210998",
+      "itemWebUrl": "https://www.ebay.com/itm/New-Sealed-Apple-iPad-7th-Gen-32GB-Gold-Wi-Fi-Only-MW762LL-A-Tablet/303501155591?hash=item46aa141d07:g:uGEAAOSwHwldx0no",
+      "itemLocation": {
+        "postalCode": "970**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/303501155591_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/303501155591_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/303501155591_4_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|193331734142|493522971377",
+      "title": "NEW Apple iPad - Latest Version 10.2 Retina Display 32GB Wifi Touch ID + EarPods",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=193331734142",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mvYuwmY0GqaTUyXJNZDtjEA/s-l225.jpg"
+      },
+      "price": {
+        "value": "279.99",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|193331734142|493522971377",
+      "seller": {
+        "username": "re_tech_deals",
+        "feedbackPercentage": "99.8",
+        "feedbackScore": 3752
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "12035112297",
+      "itemWebUrl": "https://www.ebay.com/itm/NEW-Apple-iPad-Latest-Version-10-2-Retina-Display-32GB-Wifi-Touch-ID-EarPods/193331734142?hash=item2d0378267e:m:mvYuwmY0GqaTUyXJNZDtjEA",
+      "itemLocation": {
+        "postalCode": "761**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/193331734142_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/193331734142_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/193331734142_4_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|183423762853|0",
+      "title": "Apple iPad 6th Gen. 2018 - 32GB, Wi-Fi, 9.7in - Space Gray - GRADE A (R)",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/WsMAAOSwd6pblJzU/s-l225.jpg"
+      },
+      "price": {
+        "value": "239.85",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|183423762853|0",
+      "seller": {
+        "username": "eazytrade84",
+        "feedbackPercentage": "99.3",
+        "feedbackScore": 85173
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/NzIwWDczMA==/z/WsMAAOSwd6pblJzU/$_0.JPG?set_id=8800005007"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "243957293",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-6th-Gen-2018-32GB-Wi-Fi-9-7in-Space-Gray-GRADE-A-R/183423762853?hash=item2ab4e881a5:g:WsMAAOSwd6pblJzU",
+      "itemLocation": {
+        "postalCode": "450**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/183423762853_2_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|264603499769|0",
+      "title": "Apple iPad 7th Gen. 32GB, Wi-Fi, 10.2 in Space Gray",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/thcAAOSwuOJeNsmh/s-l225.jpg"
+      },
+      "price": {
+        "value": "294.99",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|264603499769|0",
+      "seller": {
+        "username": "brat25510",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 253
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "epid": "4034210179",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-7th-Gen-32GB-Wi-Fi-10-2-in-Space-Gray/264603499769?hash=item3d9b98fcf9:g:thcAAOSwuOJeNsmh",
+      "itemLocation": {
+        "postalCode": "087**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|172688041031|471484661200",
+      "title": "Apple iPad mini 4th 16GB 32GB 64GB 128GB Wi-Fi, 7.9in - Gray Silver Gold (R)",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=172688041031",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mHurJfDs_EJjZtDTuQ7IUGA/s-l225.jpg"
+      },
+      "price": {
+        "value": "259.85",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|172688041031|471484661200",
+      "seller": {
+        "username": "eazytrade84",
+        "feedbackPercentage": "99.3",
+        "feedbackScore": 85179
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "216598788",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-mini-4th-16GB-32GB-64GB-128GB-Wi-Fi-7-9in-Gray-Silver-Gold-R/172688041031?hash=item2835026447:m:mHurJfDs_EJjZtDTuQ7IUGA",
+      "itemLocation": {
+        "postalCode": "450**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/172688041031_2_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|114121524972|414380425376",
+      "title": "NEW APPLE IPAD PRO 11\" SPACE GRAY SILVER 64GB 256GB 512GB 1TB WIFI OR CELLULAR",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=114121524972",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mbYsNac8G6o66UhTb_DT2HA/s-l225.jpg"
+      },
+      "price": {
+        "value": "679.99",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|114121524972|414380425376",
+      "seller": {
+        "username": "innovee.tech",
+        "feedbackPercentage": "98.9",
+        "feedbackScore": 14885
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/NEW-APPLE-IPAD-PRO-11-SPACE-GRAY-SILVER-64GB-256GB-512GB-1TB-WIFI-OR-CELLULAR/114121524972?hash=item1a922c46ec:m:mbYsNac8G6o66UhTb_DT2HA",
+      "itemLocation": {
+        "postalCode": "100**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114121524972_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114121524972_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114121524972_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114121524972_5_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|113956255646|0",
+      "title": "Apple iPad 7th Gen 32GB Space Gray Wi-Fi MW742LL/A (Latest Model)",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/dCwAAOSw14ZdxXs6/s-l225.jpg"
+      },
+      "price": {
+        "value": "249.00",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|113956255646|0",
+      "seller": {
+        "username": "vipoutlet",
+        "feedbackPercentage": "96.6",
+        "feedbackScore": 263716
+      },
+      "marketingPrice": {
+        "originalPrice": {
+          "value": "329.00",
+          "currency": "USD"
+        },
+        "discountPercentage": "24",
+        "discountAmount": {
+          "value": "80.00",
+          "currency": "USD"
+        },
+        "priceTreatment": "LIST_PRICE"
+      },
+      "condition": "Seller refurbished",
+      "conditionId": "2500",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/NTkxWDUwMA==/z/dCwAAOSw14ZdxXs6/$_0.PNG?set_id=880000500F"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "4034210179",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-7th-Gen-32GB-Space-Gray-Wi-Fi-MW742LL-A-Latest-Model/113956255646?hash=item1a8852779e:g:dCwAAOSw14ZdxXs6",
+      "itemLocation": {
+        "postalCode": "727**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "adultOnly": false,
+      "priceDisplayCondition": "ONLY_SHOW_ON_REQUEST"
+    },
+    {
+      "itemId": "v1|293296409930|592161072485",
+      "title": "2019 Apple iPad 7th Gen 32/128GB WiFi 10.2\" Retina/A10 Chip/TouchID Latest Model",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=293296409930",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mWmF0ATmxTioVZdhgtwXtfQ/s-l225.jpg"
+      },
+      "price": {
+        "value": "282.85",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|293296409930|592161072485",
+      "seller": {
+        "username": "kindle_mall",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 10938
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/2019-Apple-iPad-7th-Gen-32-128GB-WiFi-10-2-Retina-A10-Chip-TouchID-Latest-Model/293296409930?hash=item4449d40d4a:m:mWmF0ATmxTioVZdhgtwXtfQ",
+      "itemLocation": {
+        "postalCode": "972**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/293296409930_2_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|283765552947|0",
+      "title": "Apple iPad 2 9.7\" Tablet 16GB Wi-Fi Touchscreen - Black (MC769LL/A)",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/OLgAAOSw~QdeNIqP/s-l225.jpg"
+      },
+      "price": {
+        "value": "129.95",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|283765552947|0",
+      "seller": {
+        "username": "discountcomputerdepot",
+        "feedbackPercentage": "97.2",
+        "feedbackScore": 51181
+      },
+      "condition": "Seller refurbished",
+      "conditionId": "2500",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/NTAwWDUwMA==/z/OLgAAOSw~QdeNIqP/$_0.JPG?set_id=8800005007"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-2-9-7-Tablet-16GB-Wi-Fi-Touchscreen-Black-MC769LL-A/283765552947?hash=item4211beb733:g:OLgAAOSw~QdeNIqP",
+      "itemLocation": {
+        "postalCode": "757**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283765552947_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283765552947_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283765552947_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283765552947_5_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283765552947_6_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283765552947_7_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|223000037386|521806247679",
+      "title": "Apple iPad Mini 1/2/3/4 WIFI, 7.9\" Display",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=223000037386",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/miuVcjQW-1srX-ETn9QwMLA/s-l225.jpg"
+      },
+      "price": {
+        "value": "119.00",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|223000037386|521806247679",
+      "seller": {
+        "username": "marina1874",
+        "feedbackPercentage": "98.0",
+        "feedbackScore": 4545
+      },
+      "condition": "Used",
+      "conditionId": "3000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "172927397",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Mini-1-2-3-4-WIFI-7-9-Display/223000037386?hash=item33ebd6880a:m:miuVcjQW-1srX-ETn9QwMLA",
+      "itemLocation": {
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/223000037386_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/223000037386_3_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|193306973735|0",
+      "title": "🍎~LATEST MODEL~Apple iPad Air 3rd Generation 64GB, Wi-Fi,  - Space Gray",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/I2EAAOSwo-5eQcgo/s-l225.jpg"
+      },
+      "price": {
+        "value": "389.95",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|193306973735|0",
+      "seller": {
+        "username": "jrlelectronicshub",
+        "feedbackPercentage": "99.7",
+        "feedbackScore": 4814
+      },
+      "condition": "Open box",
+      "conditionId": "1500",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/MTYwMFgxNjAw/z/I2EAAOSwo-5eQcgo/$_0.JPG?set_id=8800005007"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "2301649894",
+      "itemWebUrl": "https://www.ebay.com/itm/LATEST-MODEL-Apple-iPad-Air-3rd-Generation-64GB-Wi-Fi-Space-Gray/193306973735?hash=item2d01fe5627:g:I2EAAOSwo-5eQcgo",
+      "itemLocation": {
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/193306973735_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/193306973735_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/193306973735_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/193306973735_5_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/193306973735_6_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/193306973735_7_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/193306973735_8_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/193306973735_9_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|362681196828|631829093547",
+      "title": "Apple iPad Mini 4 Wi-Fi + Cellular - 16GB 32GB 64GB 128GB Space Gray-Silver-Gold",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=362681196828",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mTa46KyUzAF5j0Ij8XWT_Zg/s-l225.jpg"
+      },
+      "price": {
+        "value": "199.99",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|362681196828|631829093547",
+      "seller": {
+        "username": "ltdealsdirect",
+        "feedbackPercentage": "99.4",
+        "feedbackScore": 1197
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Mini-4-Wi-Fi-Cellular-16GB-32GB-64GB-128GB-Space-Gray-Silver-Gold/362681196828?hash=item54717be11c:m:mTa46KyUzAF5j0Ij8XWT_Zg",
+      "itemLocation": {
+        "postalCode": "112**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/362681196828_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/362681196828_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/362681196828_4_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|264000989927|563711028499",
+      "title": "NEW Apple iPad 2 3 4 Air Air 2 Pro or Mini - WiFi or Cell - 16GB 32GB 64GB 128GB",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=264000989927",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mIHmJnB__WwRu4o1P0NCwLQ/s-l225.jpg"
+      },
+      "price": {
+        "value": "199.95",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|264000989927|563711028499",
+      "seller": {
+        "username": "techgallery1",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 2241
+      },
+      "condition": "Open box",
+      "conditionId": "1500",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/NEW-Apple-iPad-2-3-4-Air-Air-2-Pro-or-Mini-WiFi-or-Cell-16GB-32GB-64GB-128GB/264000989927?hash=item3d77af6ae7:m:mIHmJnB__WwRu4o1P0NCwLQ",
+      "itemLocation": {
+        "postalCode": "481**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/264000989927_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/264000989927_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/264000989927_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/264000989927_5_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/264000989927_6_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/264000989927_7_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/264000989927_8_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/264000989927_9_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/264000989927_10_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/264000989927_11_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/264000989927_12_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|202590295359|502658643498",
+      "title": "Apple iPad Pro 10.5\" Wifi or Cellular, 64GB 256GB 512GB - Gray Silver Gold Rose",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=202590295359",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mr3ynuYrwmpZPtVdZfdyFyQ/s-l225.jpg"
+      },
+      "price": {
+        "value": "439.85",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|202590295359|502658643498",
+      "seller": {
+        "username": "eazytrade84",
+        "feedbackPercentage": "99.3",
+        "feedbackScore": 85167
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "238199426",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Pro-10-5-Wifi-or-Cellular-64GB-256GB-512GB-Gray-Silver-Gold-Rose/202590295359?hash=item2f2b52953f:m:mr3ynuYrwmpZPtVdZfdyFyQ",
+      "itemLocation": {
+        "postalCode": "450**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/202590295359_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/202590295359_3_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|323428292678|512693522680",
+      "title": "Apple iPad mini 1/2/3/4 WIFI+Cellular (7.9\" Display)",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=323428292678",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mof-PrLYMt0-6MAqdTuBQYA/s-l225.jpg"
+      },
+      "price": {
+        "value": "109.00",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|323428292678|512693522680",
+      "seller": {
+        "username": "marina1874",
+        "feedbackPercentage": "98.0",
+        "feedbackScore": 4566
+      },
+      "condition": "Used",
+      "conditionId": "3000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-mini-1-2-3-4-WIFI-Cellular-7-9-Display/323428292678?hash=item4b4dd41846:m:mof-PrLYMt0-6MAqdTuBQYA",
+      "itemLocation": {
+        "postalCode": "974**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|143485864877|442446797955",
+      "title": "NEW Apple iPad Pro 12.9\" / 9.7\"  Wifi / Cell , Gray Silver Gold - 128GB",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=143485864877",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mfBeq0O7ha7NAYF1jbPkD9A/s-l225.jpg"
+      },
+      "price": {
+        "value": "259.99",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|143485864877|442446797955",
+      "seller": {
+        "username": "jashss2014",
+        "feedbackPercentage": "98.5",
+        "feedbackScore": 7879
+      },
+      "condition": "Open box",
+      "conditionId": "1500",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/NEW-Apple-iPad-Pro-12-9-9-7-Wifi-Cell-Gray-Silver-Gold-128GB/143485864877?hash=item21686c8bad:m:mfBeq0O7ha7NAYF1jbPkD9A",
+      "itemLocation": {
+        "postalCode": "201**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|371755393228|640732670918",
+      "title": "Apple iPad 4 - 4th Generation 9.7\" with Retina Display 16GB, 32GB, 64GB WIFI",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=371755393228",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mFsKXAzCDB_CgwUpZyy4vSQ/s-l225.jpg"
+      },
+      "price": {
+        "value": "139.99",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|371755393228|640732670918",
+      "seller": {
+        "username": "bigdeals",
+        "feedbackPercentage": "99.3",
+        "feedbackScore": 383562
+      },
+      "marketingPrice": {
+        "originalPrice": {
+          "value": "249.99",
+          "currency": "USD"
+        },
+        "discountPercentage": "58",
+        "discountAmount": {
+          "value": "140.00",
+          "currency": "USD"
+        },
+        "priceTreatment": "LIST_PRICE"
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "129581473",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-4-4th-Generation-9-7-with-Retina-Display-16GB-32GB-64GB-WIFI/371755393228?hash=item568e5920cc:m:mFsKXAzCDB_CgwUpZyy4vSQ",
+      "itemLocation": {
+        "postalCode": "085**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/371755393228_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/371755393228_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/371755393228_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/371755393228_5_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|114133664811|0",
+      "title": "Apple iPad Air 2nd Generation Tablet 9.7in 64GB Wi-Fi Space Gray A1566 ",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/1cgAAOSwCCJeWY0e/s-l225.jpg"
+      },
+      "price": {
+        "value": "129.99",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|114133664811|0",
+      "seller": {
+        "username": "trinity3-itw",
+        "feedbackPercentage": "99.9",
+        "feedbackScore": 8403
+      },
+      "condition": "Used",
+      "conditionId": "3000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/MTA2NVg4Mjg=/z/1cgAAOSwCCJeWY0e/$_0.JPG?set_id=8800005007"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Air-2nd-Generation-Tablet-9-7in-64GB-Wi-Fi-Space-Gray-A1566/114133664811?hash=item1a92e5842b:g:1cgAAOSwCCJeWY0e",
+      "itemLocation": {
+        "postalCode": "551**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114133664811_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114133664811_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114133664811_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114133664811_5_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114133664811_6_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114133664811_7_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114133664811_8_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114133664811_9_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114133664811_10_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/114133664811_11_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|184063196712|691754836903",
+      "title": "New Apple iPad (10.2-Inch, Wi-Fi, 32GB)  -  (Latest Model)",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=184063196712",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mxW3CK7hC8trQx334KzUe2Q/s-l225.jpg"
+      },
+      "price": {
+        "value": "275.99",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|184063196712|691754836903",
+      "seller": {
+        "username": "buck_hot",
+        "feedbackPercentage": "98.6",
+        "feedbackScore": 1910
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/New-Apple-iPad-10-2-Inch-Wi-Fi-32GB-Latest-Model/184063196712?hash=item2adb057e28:m:mxW3CK7hC8trQx334KzUe2Q",
+      "itemLocation": {
+        "postalCode": "430**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|201293463954|0",
+      "title": "Apple iPad Air 1st Generation 16GB, WiFi, 9.7in Space Gray - Grade A (R)",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/JlsAAOSwI-BWMnpE/s-l225.jpg"
+      },
+      "price": {
+        "value": "119.85",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|201293463954|0",
+      "seller": {
+        "username": "eazytrade84",
+        "feedbackPercentage": "99.3",
+        "feedbackScore": 85175
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/NzE3WDc2NQ==/z/JlsAAOSwI-BWMnpE/$_0.JPG?set_id=880000500F"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "245461865",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Air-1st-Generation-16GB-WiFi-9-7in-Space-Gray-Grade-A-R/201293463954?hash=item2ede068192:g:JlsAAOSwI-BWMnpE",
+      "itemLocation": {
+        "postalCode": "450**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|113008335820|0",
+      "title": "Apple iPad 6th Gen 128GB Space Gray Wi-Fi MR7J2LL/A",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/PEcAAOSwSQRdDBek/s-l225.jpg"
+      },
+      "price": {
+        "value": "332.00",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|113008335820|0",
+      "seller": {
+        "username": "vipoutlet",
+        "feedbackPercentage": "96.6",
+        "feedbackScore": 263773
+      },
+      "marketingPrice": {
+        "originalPrice": {
+          "value": "398.00",
+          "currency": "USD"
+        },
+        "discountPercentage": "17",
+        "discountAmount": {
+          "value": "66.00",
+          "currency": "USD"
+        },
+        "priceTreatment": "LIST_PRICE"
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/NzAyWDEwMjQ=/z/PEcAAOSwSQRdDBek/$_0.JPG?set_id=880000500F"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "243878859",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-6th-Gen-128GB-Space-Gray-Wi-Fi-MR7J2LL-A/113008335820?hash=item1a4fd25bcc:g:PEcAAOSwSQRdDBek",
+      "itemLocation": {
+        "postalCode": "727**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/113008335820_2_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false,
+      "priceDisplayCondition": "ONLY_SHOW_ON_REQUEST"
+    },
+    {
+      "itemId": "v1|362665287807|631813887213",
+      "title": "Apple iPad Pro (12.9 inch) - 128GB - Wi-Fi + Cellular -Space Gray -Silver -Gold",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=362665287807",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mEnsUPz0tuajS355bAquXNg/s-l225.jpg"
+      },
+      "price": {
+        "value": "399.99",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|362665287807|631813887213",
+      "seller": {
+        "username": "ltdealsdirect",
+        "feedbackPercentage": "99.4",
+        "feedbackScore": 1195
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Pro-12-9-inch-128GB-Wi-Fi-Cellular-Space-Gray-Silver-Gold/362665287807?hash=item547089207f:m:mEnsUPz0tuajS355bAquXNg",
+      "itemLocation": {
+        "postalCode": "112**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/362665287807_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/362665287807_3_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|254526145576|0",
+      "title": "Apple iPad Air 2 64GB, Wi-Fi, 9.7in, Silver, Excellent Condition",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/g4UAAOSwgaxeWb9N/s-l225.jpg"
+      },
+      "price": {
+        "value": "150.00",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|254526145576|0",
+      "seller": {
+        "username": "klfsco8466",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 247
+      },
+      "condition": "Used",
+      "conditionId": "3000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/g4UAAOSwgaxeWb9N/$_0.JPG?set_id=880000500F"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "12.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE",
+        "AUCTION"
+      ],
+      "bidCount": 0,
+      "currentBidPrice": {
+        "value": "87.00",
+        "currency": "USD"
+      },
+      "epid": "204326605",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Air-2-64GB-Wi-Fi-9-7in-Silver-Excellent-Condition/254526145576?hash=item3b42f0c428:g:g4UAAOSwgaxeWb9N",
+      "itemLocation": {
+        "postalCode": "799**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/254526145576_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/254526145576_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/254526145576_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/254526145576_5_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/254526145576_6_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/254526145576_7_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/254526145576_8_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/254526145576_9_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|223225952049|522204026071",
+      "title": "Apple iPad 4 (4th Generation) 9.7\" Retina Display Black/White",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=223225952049",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mzgkwgrUU5EGxiQMGzDIiOw/s-l225.jpg"
+      },
+      "price": {
+        "value": "89.00",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|223225952049|522204026071",
+      "seller": {
+        "username": "marina1874",
+        "feedbackPercentage": "98.0",
+        "feedbackScore": 4578
+      },
+      "condition": "Used",
+      "conditionId": "3000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-4-4th-Generation-9-7-Retina-Display-Black-White/223225952049?hash=item33f94db731:m:mzgkwgrUU5EGxiQMGzDIiOw",
+      "itemLocation": {
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|123238130564|0",
+      "title": "Apple iPad 6th Gen 128GB Silver Wi-Fi MR7K2LL/A",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/9zkAAOSwBPxcfCmq/s-l225.jpg"
+      },
+      "price": {
+        "value": "332.00",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|123238130564|0",
+      "seller": {
+        "username": "vipoutlet",
+        "feedbackPercentage": "96.6",
+        "feedbackScore": 263764
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/MTAwMFg2MzQ=/z/9zkAAOSwBPxcfCmq/$_0.JPG?set_id=880000500F"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "243806002",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-6th-Gen-128GB-Silver-Wi-Fi-MR7K2LL-A/123238130564?hash=item1cb190a384:g:9zkAAOSwBPxcfCmq",
+      "itemLocation": {
+        "postalCode": "727**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/123238130564_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/123238130564_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/123238130564_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/123238130564_5_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|181891631767|0",
+      "title": "Apple iPad Air 1st Generation 32GB Wi-Fi, 9.7in - Silver - Grade A Condition (R)",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/ku0AAOSwXshWqbxF/s-l225.jpg"
+      },
+      "price": {
+        "value": "139.85",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|181891631767|0",
+      "seller": {
+        "username": "eazytrade84",
+        "feedbackPercentage": "99.3",
+        "feedbackScore": 85175
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/NzE1WDc4Nw==/z/ku0AAOSwXshWqbxF/$_0.JPG?set_id=8800005007"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "170341279",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Air-1st-Generation-32GB-Wi-Fi-9-7in-Silver-Grade-A-Condition-R/181891631767?hash=item2a59960a97:g:ku0AAOSwXshWqbxF",
+      "itemLocation": {
+        "postalCode": "450**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|153741097634|453759930983",
+      "title": "Apple - iPad 7 (Latest Model) with Wi-Fi - 32GB - MULTIPLE COLORS!",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=153741097634",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mXotc57F0RIwJv1PZEg75DA/s-l225.jpg"
+      },
+      "price": {
+        "value": "254.99",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|153741097634|453759930983",
+      "seller": {
+        "username": "alldayzip",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 28443
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-7-Latest-Model-with-Wi-Fi-32GB-MULTIPLE-COLORS/153741097634?hash=item23cbaefaa2:m:mXotc57F0RIwJv1PZEg75DA",
+      "itemLocation": {
+        "postalCode": "038**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|303501155083|0",
+      "title": "New Sealed Apple iPad 7th Gen. 32GB Space Gray, Wi-Fi Only MW742LL/A 10.2\" ",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/lWkAAOSwWtZdyvtf/s-l225.jpg"
+      },
+      "price": {
+        "value": "279.95",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|303501155083|0",
+      "seller": {
+        "username": "steevesj",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 7702
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/MTAwMFg2OTQ=/z/lWkAAOSwWtZdyvtf/$_0.JPG?set_id=8800005007"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "4034210179",
+      "itemWebUrl": "https://www.ebay.com/itm/New-Sealed-Apple-iPad-7th-Gen-32GB-Space-Gray-Wi-Fi-Only-MW742LL-A-10-2/303501155083?hash=item46aa141b0b:g:lWkAAOSwWtZdyvtf",
+      "itemLocation": {
+        "postalCode": "970**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/303501155083_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/303501155083_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/303501155083_4_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|323829411001|512840149595",
+      "title": "Apple iPad Air 1st Generation 32GB Wi-Fi, 9.7in - Space Gray A1474 Grade A, B, C",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=323829411001",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mb73bhu1_VaIIBZHCcU7UhQ/s-l225.jpg"
+      },
+      "price": {
+        "value": "139.00",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|323829411001|512840149595",
+      "seller": {
+        "username": "edusolutions",
+        "feedbackPercentage": "99.6",
+        "feedbackScore": 2857
+      },
+      "condition": "Seller refurbished",
+      "conditionId": "2500",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Air-1st-Generation-32GB-Wi-Fi-9-7in-Space-Gray-A1474-Grade-A-B-C/323829411001?hash=item4b65bcacb9:m:mb73bhu1_VaIIBZHCcU7UhQ",
+      "itemLocation": {
+        "postalCode": "760**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/323829411001_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/323829411001_3_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|222990091609|522177271383",
+      "title": "Apple iPad Air 2 (9.7\" Retina) 16GB/32GB/64GB/128GB Gold/Gray/Silver WIFI/LTE",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=222990091609",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/m90q3xgg26ofye9DcrRRVNg/s-l225.jpg"
+      },
+      "price": {
+        "value": "149.00",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|222990091609|522177271383",
+      "seller": {
+        "username": "marina1874",
+        "feedbackPercentage": "98.0",
+        "feedbackScore": 4558
+      },
+      "condition": "Used",
+      "conditionId": "3000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Air-2-9-7-Retina-16GB-32GB-64GB-128GB-Gold-Gray-Silver-WIFI-LTE/222990091609?hash=item33eb3ec559:m:m90q3xgg26ofye9DcrRRVNg",
+      "itemLocation": {
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|283128385133|583533979854",
+      "title": "New Sealed Apple iPad 6th Gen 32GB 128GB Gray Gold Silver 9.7 WiFi 2018",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=283128385133",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mEvicfgs9VaQqHHKZgc-Yww/s-l225.jpg"
+      },
+      "price": {
+        "value": "289.99",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|283128385133|583533979854",
+      "seller": {
+        "username": "ehexatech",
+        "feedbackPercentage": "99.5",
+        "feedbackScore": 3969
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/New-Sealed-Apple-iPad-6th-Gen-32GB-128GB-Gray-Gold-Silver-9-7-WiFi-2018/283128385133?hash=item41ebc44e6d:m:mEvicfgs9VaQqHHKZgc-Yww",
+      "itemLocation": {
+        "postalCode": "930**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283128385133_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283128385133_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283128385133_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283128385133_5_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283128385133_6_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283128385133_7_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|143404353163|442337555423",
+      "title": "Apple iPad Bundle | 2/3/4/Mini1/2/3/4 | Black/White/Silver/Gold/SpaceGray | WiFi",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=143404353163",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mmdTD5gTgOeP8_7WfCEXYpQ/s-l225.jpg"
+      },
+      "price": {
+        "value": "119.95",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|143404353163|442337555423",
+      "seller": {
+        "username": "wirelessliquidations",
+        "feedbackPercentage": "98.5",
+        "feedbackScore": 2184
+      },
+      "condition": "Seller refurbished",
+      "conditionId": "2500",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Bundle-2-3-4-Mini1-2-3-4-Black-White-Silver-Gold-SpaceGray-WiFi/143404353163?hash=item216390c68b:m:mmdTD5gTgOeP8_7WfCEXYpQ",
+      "itemLocation": {
+        "postalCode": "837**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/143404353163_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/143404353163_3_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|174107142492|472966467894",
+      "title": "Apple 10.2\" iPad 7th Generation Wi-Fi - Latest 2019 Model",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=174107142492",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/m8NaG0qaxkvHNNRGUkyC_0w/s-l225.jpg"
+      },
+      "price": {
+        "value": "275.99",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|174107142492|472966467894",
+      "seller": {
+        "username": "the_little_engine",
+        "feedbackPercentage": "99.5",
+        "feedbackScore": 1551
+      },
+      "condition": "New",
+      "conditionId": "1000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "19034210998",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-10-2-iPad-7th-Generation-Wi-Fi-Latest-2019-Model/174107142492?hash=item288998295c:m:m8NaG0qaxkvHNNRGUkyC_0w",
+      "itemLocation": {
+        "postalCode": "208**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/174107142492_2_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|202577195749|502646269132",
+      "title": "Apple iPad Pro 12.9\" Wi-Fi Touch ID I 32GB 128GB or 256GB I GOLD GRAY SILVER (R)",
+      "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=202577195749",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mSO-5HbrXv6hfsfGa0_mg_g/s-l225.jpg"
+      },
+      "price": {
+        "value": "407.49",
+        "currency": "USD"
+      },
+      "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|202577195749|502646269132",
+      "seller": {
+        "username": "eazytrade84",
+        "feedbackPercentage": "99.3",
+        "feedbackScore": 85162
+      },
+      "condition": "Manufacturer refurbished",
+      "conditionId": "2000",
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "epid": "216598778",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Pro-12-9-Wi-Fi-Touch-ID-I-32GB-128GB-or-256GB-I-GOLD-GRAY-SILVER-R/202577195749?hash=item2f2a8ab2e5:m:mSO-5HbrXv6hfsfGa0_mg_g",
+      "itemLocation": {
+        "postalCode": "450**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/202577195749_2_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|283798117926|0",
+      "title": "Apple iPad 6th Gen. 128GB, Wi-Fi, 9.7in - Space Gray with original box",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/jRwAAOSwJHheWIKd/s-l225.jpg"
+      },
+      "price": {
+        "value": "250.00",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|283798117926|0",
+      "seller": {
+        "username": "tauruskev",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 363
+      },
+      "marketingPrice": {
+        "originalPrice": {
+          "value": "285.00",
+          "currency": "USD"
+        },
+        "discountPercentage": "12",
+        "discountAmount": {
+          "value": "35.00",
+          "currency": "USD"
+        }
+      },
+      "condition": "Used",
+      "conditionId": "3000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/MTE4MlgxNjAw/z/jRwAAOSwJHheWIKd/$_0.JPG?set_id=8800005007"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "epid": "243878859",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-6th-Gen-128GB-Wi-Fi-9-7in-Space-Gray-with-original-box/283798117926?hash=item4213af9e26:g:jRwAAOSwJHheWIKd",
+      "itemLocation": {
+        "postalCode": "601**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283798117926_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283798117926_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283798117926_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283798117926_5_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283798117926_6_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283798117926_7_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283798117926_8_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283798117926_9_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283798117926_10_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283798117926_11_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|174205351697|0",
+      "title": "Apple iPad 7th Gen. 32GB, Wi-Fi, 10.2 in - Space Gray",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/mGgAAOSwXj1eWWHm/s-l225.jpg"
+      },
+      "price": {
+        "value": "279.00",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|174205351697|0",
+      "seller": {
+        "username": "clrichar08",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 118
+      },
+      "condition": "Used",
+      "conditionId": "3000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/mGgAAOSwXj1eWWHm/$_0.JPG?set_id=880000500F"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE",
+        "AUCTION"
+      ],
+      "bidCount": 0,
+      "currentBidPrice": {
+        "value": "210.00",
+        "currency": "USD"
+      },
+      "epid": "4034210179",
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-7th-Gen-32GB-Wi-Fi-10-2-in-Space-Gray/174205351697?hash=item288f72b711:g:mGgAAOSwXj1eWWHm",
+      "itemLocation": {
+        "postalCode": "111**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/174205351697_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/174205351697_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/174205351697_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/174205351697_5_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    },
+    {
+      "itemId": "v1|164098788296|0",
+      "title": "Apple iPad Air 2nd Generation Tablet 9.7in 64GB Wi-Fi Space Gray A1566 ",
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/thumbs/images/g/PNMAAOSw9D1eWX~V/s-l225.jpg"
+      },
+      "price": {
+        "value": "129.99",
+        "currency": "USD"
+      },
+      "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|164098788296|0",
+      "seller": {
+        "username": "trinity3-itw",
+        "feedbackPercentage": "99.9",
+        "feedbackScore": 8402
+      },
+      "condition": "Used",
+      "conditionId": "3000",
+      "thumbnailImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/00/s/MTIxOFg4NTY=/z/PNMAAOSw9D1eWX~V/$_0.JPG?set_id=8800005007"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "0.00",
+            "currency": "USD"
+          }
+        }
+      ],
+      "buyingOptions": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/Apple-iPad-Air-2nd-Generation-Tablet-9-7in-64GB-Wi-Fi-Space-Gray-A1566/164098788296?hash=item26350ccbc8:g:PNMAAOSw9D1eWX~V",
+      "itemLocation": {
+        "postalCode": "551**",
+        "country": "US"
+      },
+      "categories": [
+        {
+          "categoryId": "171485"
+        },
+        {
+          "categoryId": "58058"
+        }
+      ],
+      "additionalImages": [
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/164098788296_2_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/164098788296_3_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/164098788296_4_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/164098788296_5_0_1/225x225.jpg"
+        },
+        {
+          "imageUrl": "https://galleryplus.ebayimg.com/ws/web/164098788296_6_0_1/225x225.jpg"
+        }
+      ],
+      "adultOnly": false
+    }
+  ]
+}
+SUCCESS
