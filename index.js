@@ -74,7 +74,7 @@ async function ebayFeed(categoryId) {
         const response = await instance.request(request);
         console.log(JSON.stringify(response.data));
     } catch (error) {
-        console.log(JSON.stringify(error.response);
+        console.log(JSON.stringify(error.response.data));
     }
 }
 
