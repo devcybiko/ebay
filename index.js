@@ -93,7 +93,9 @@ async function getIpadSummaries(start, limit) {
             // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
             let line = [];
             //console.log(item.title);
+            console.error(JSON.stringify(item, null, 2));
             line.push(item.price.value);
+            line.push(item.condition);
             let style = item.title.match(/pro|mini|air/i);
             if (style) line.push(style[0]);
             else line.push("ipad");
@@ -130,13 +132,14 @@ async function getIpadSummaries(start, limit) {
             let color = item.title.match(/gold|silver|gray|grey|black/i);
             if (color) line.push(color[0]);
             else line.push("");
+            line.push(item.itemWebUrl);
             console.log(line.join(","));
         }
     });
 }
 
 async function main() {
-    console.log(`price,style,size,gen,gb,model,time,year,wifi,cellular,unlocked,color`);
+    console.log(`price,condition,style,gen,size,gb,model,time,year,wifi,cellular,unlocked,color,url`);
     getIpadSummaries(0,100);
     getIpadSummaries(101,100);
     getIpadSummaries(201,100);
