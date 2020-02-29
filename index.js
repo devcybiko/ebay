@@ -84,7 +84,8 @@ async function getIpadSummaries$(start, limit) {
     const results = [];
     let data = await ebaySearch$(tabletCategory, 'ipad', start, limit);
     data.itemSummaries.forEach(item => {
-        // console.log(JSON.stringify(item, null, 2));
+        console.error(JSON.stringify(item, null, 2));
+        exit;
         if (item.itemGroupType) {
             // console.log(`**${item.title}`);
             // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
@@ -115,9 +116,9 @@ async function getIpadSummaries$(start, limit) {
                 model: model[0] || "",
                 season:  time[0] || "",
                 year: year[0] || "",
-                wifi: !!(wifi[0] || ""),
+                wifi: wifi[0] || "",
                 cellular: cellular[0] || "",
-                unlocked: !!(unlocked[0] || ""),
+                unlocked: unlocked[0] || "",
                 color: color[0] || "",
                 url: item.itemWebUrl,
             }
