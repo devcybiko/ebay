@@ -96,12 +96,21 @@ async function getIpadSummaries() {
             if (gen) console.log(gen[1])
             let gb = item.title.match(/\d+GB/);
             if (gb) console.log(gb[0]);
-            let style = item.title.match(/pro|mini|air/i);
+            let style = item.title.match(/pro|mini|air|mini/i);
             if (style) console.log(style[0]);
-            let size = item.title.match(/(\d+[.]\d) ?(\"|inch|in)/i);
+            let size = item.title.match(/(\d+([.]\d)?) ?(\"|inch|in)/i);
             if (size) console.log(size[1]);
-            let color = item.title.match(/gold|silver|gray/i);
+            let color = item.title.match(/gold|silver|gray|grey|black/i);
             if (color) console.log(color[0]);
+            let wifi = item.title.match(/wi-fi|wifi/i);
+            if (wifi) console.log(wifi[0]);
+            let cellular = item.title.match(/sprint|verizon|4g|lte|cellular/i);
+            if (cellular) console.log(cellular[0]);
+            let unlocked = item.title.match(/unlocked/i);
+            if (unlocked) console.log(unlocked[0]);
+            let model = item.title.match(/M.*\/A/);
+            if (model) console.log(model[0]);
+
         }
     });
 }
