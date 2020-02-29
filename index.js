@@ -100,9 +100,9 @@ async function getIpadSummaries$(start, limit) {
             let model = item.title.match(/M.*\/A/) || item.title.match(/A\d{4}/) || [];
             let time = item.title.match(/mid|early|late[^s]/i) || [];
             let year = item.title.match(/20\d\d/) || [];
-            let wifi = item.title.match(/wi-fi|wifi/i) || [];
+            let wifi = (!!item.title.match(/wi-fi|wifi/i)) || [];
             let cellular = item.title.match(/sprint|verizon|4g[^b]|lte|cellular/i) || [];
-            let unlocked = item.title.match(/unlocked/i) || [];
+            let unlocked = (!!item.title.match(/unlocked/i)) || [];
             let color = item.title.match(/gold|silver|gray|grey|black/i) || [];
 
             ipad = {
@@ -133,6 +133,7 @@ async function main$() {
     let results = [];
     let start = 0;
     let count = 100;
+    let max = 100;
     for(let start = 0; start < 3000; start += count) {
         // console.error(start);
         let ipads = await getIpadSummaries$(start,count);
