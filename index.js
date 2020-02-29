@@ -15,22 +15,25 @@ const request = {
     params: {
         category_ids: `108765`,
         q: `Beatles`,
-        filter: `price:[200..500]&fileter==priceCurrency:USD`,
+        filter: [`price:[200..500]`, `priceCurrency:USD`],
         limit: `10`
     },
+
     timeout: 1000, // default is `0` (no timeout)
     responseType: 'json', // default
     responseEncoding: 'utf8', // default
     maxContentLength: 2000,
 };
 const instance = axios.create(request);
-instance.request()
+instance.request(request)
     .then(response => {
         console.log(response.data.url);
         console.log(response.data.explanation);
         console.log("SUCCESS");
     })
     .catch(error => {
-        console.log(error.response.data);
+        console.log(error);
+        // console.log(error.config);
+        // console.log(error.response);
         console.log("ERROR");
     });
