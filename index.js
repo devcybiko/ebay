@@ -82,12 +82,15 @@ async function ebayFeed$(categoryId) {
 async function getIpadSummaries$(start, limit) {
     const tabletCategory = `58058`;
     const results = [];
+    let titles = [];
     let data = await ebaySearch$(tabletCategory, 'ipad', start, limit);
     data.itemSummaries.forEach(item => {
         // console.error(JSON.stringify(item, null, 2));
         if (item.itemGroupType) {
+            titles.push(item.title);
             console.error(`**${item.title}`);
-            console.error(`  ${item.itemId} ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
+            console.error(JSON.stringify(item, null, 2));
+            //console.error(`  ${item.itemId} ${item.itemWebUrl} ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
         } else {
             //console.error(`${item.title}`);
             // console.log(`  ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
@@ -127,6 +130,7 @@ async function getIpadSummaries$(start, limit) {
             results.push(ipad);
         }
     });
+    console.error(titles.sort());
     return results;
 }
 
