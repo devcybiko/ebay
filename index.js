@@ -2,8 +2,7 @@
 const axios = require('axios');
 const files = require('glstools').files;
 
-const authToken = files.read('./ebaytoken.txt');
-console.log(authToken);
+const authToken = files.read('./ebaytoken.txt').trim();
 const request = {
     method: 'get',
     url: `https://api.ebay.com/buy/browse/v1/item_summary/search`,
@@ -32,6 +31,6 @@ instance.request()
         console.log("SUCCESS");
     })
     .catch(error => {
-        console.log(error.config.headers);
+        console.log(error.response.data);
         console.log("ERROR");
     });
