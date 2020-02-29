@@ -4,10 +4,8 @@ const files = require('glstools').files;
 
 const authToken = files.read('./ebaytoken.txt').trim();
 const url2 = `https://api.ebay.com/commerce/taxonomy/v1_beta/get_default_category_tree_id?marketplace_id=EBAY_US`;
-const url3 = `https://api.ebay.com/buy/browse/v1/item_summary/search?filter=priceCurrency:USD`;
 const url4 = `https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=184057411986`;
 const url5 = `https://api.ebay.com/commerce/taxonomy/v1_beta/category_tree/0/get_category_subtree?category_id=58058`;
-const tabletCategory = `58058`;
 
 async function ebayCategoryTree() {
     const url = `https://api.ebay.com/commerce/taxonomy/v1_beta/category_tree/0`;
@@ -27,21 +25,24 @@ async function ebayCategoryTree() {
     }
 }
 
-async function ebayCategoryTree() {
-    const url = `https://api.ebay.com/commerce/taxonomy/v1_beta/category_tree/0`;
+async function ebaySearch(categoryId, query) {
+    const url = `https://api.ebay.com/buy/browse/v1/item_summary/search`;
     const request = {
         method: 'get',
         url: url,
         headers: {
             Authorization: `Bearer ${authToken}`,
-        }
+        },
+        category_ids: categoryId,
+        q: query,
     }
     try {
+        console.log(request);
         const instance = axios.create(request);
         const response = await instance.request(request);
         return response.data;
     } catch (error) {
-        console.log(error);
+        console.log(error.response);
     }
 }
 
@@ -87,8 +88,9 @@ function ebay() {
 }
 
 async function main() {
-    let response = await ebayCategoryTree();
-    console.log(JSON.stringify(response, null, 2));
+    const tabletCategory = `58058`;
+    let data = await ebaySearch(tabletCategory, 'ipad');
+    console.log(JSON.stringify(data, null, 2));
 }
 
 main();
