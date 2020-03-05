@@ -150,7 +150,7 @@ async function getIpadSummaries$(start, limit) {
                 url: item.itemWebUrl,
             }
             //console.log(ipad);
-            results.push(ipad);
+            results.push(Object.values(ipad).join(","));
         }
     });
     console.error(titles.sort());
@@ -158,7 +158,7 @@ async function getIpadSummaries$(start, limit) {
 }
 
 async function main$() {
-    console.log(`price,condition,style,gen,size,gb,model,time,year,wifi,cellular,unlocked,color,url`);
+    console.log(`id,price,condition,style,gen,size,gb,model,time,year,wifi,cellular,unlocked,color,url`);
     let results = [];
     let start = 0;
     let count = 100;
@@ -172,7 +172,7 @@ async function main$() {
         start += count;
         console.error(results.length);
     }
-    console.log(results);
+    console.log(results.join('\n'));
 }
 
 main$();
