@@ -167,7 +167,7 @@ async function main$() {
         // console.error(start);
         let ipads = await getIpadSummaries$(start,count);
         // console.error(ipads.length);
-        if (!ipads) break;
+        if (!ipads || ipads.length === 0) break;
         results = results.concat(ipads);
         start += count;
         console.error(results.length);
