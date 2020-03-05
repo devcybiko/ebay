@@ -133,24 +133,24 @@ async function getIpadSummaries$(start, limit) {
             let color = item.title.match(/gold|silver|gray|grey|black/i) || [];
 
             ipad = {
-                itemId: itemId,
+                style: style[0] ||  "ipad",
+                gen: gen[1]||gen[3]||gen[4]||"other",
+                storage: gb[0] || "other",
                 price: item.price.value,
                 condition: item.condition.toLowerCase(),
-                style: style[0] ||  "ipad",
-                gen: gen[1]||gen[3]||gen[4]||"",
-                size: size[1] || "",
-                storage: gb[0] || "",
                 model: model[0] || "",
+                size: size[1] || "",
                 season:  time[0] || "",
                 year: year[0] || "",
                 wifi: wifi[0] || "",
                 cellular: cellular[0] || "",
                 unlocked: unlocked[0] || "",
                 color: color[0] || "",
+                itemId: itemId,
                 url: item.itemWebUrl,
             }
             //console.log(ipad);
-            results.push(Object.values(ipad).join(","));
+            results.push(Object.values(ipad).join(",").toLowerCase());
         }
     });
     console.error(titles.sort());
