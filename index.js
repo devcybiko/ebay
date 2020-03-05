@@ -18,7 +18,7 @@ async function ebayCategoryTree$() {
         const response = await instance.request(request);
         return response.data;
     } catch (error) {
-        console.log(error);
+        console.error(error);
     }
 }
 
@@ -43,12 +43,12 @@ async function ebaySearch$(categoryId, query, start=0, limit=100) {
         const instance = axios.create(request);
         const response = await instance.request(request);
         if (!response.data) {
-            console.log(response);
+            console.error(response);
             return {itemSummaries: []};
         }
         return response.data;
     } catch (error) {
-        console.log(error.response);
+        console.error(error.response);
         return {itemSummaries: []};
     }
 }
@@ -66,12 +66,12 @@ async function ebayGroup$(url) {
         const instance = axios.create(request);
         const response = await instance.request(request);
         if (!response.data) {
-            console.log(response);
+            console.error(response);
             return {itemSummaries: []};
         }
         return response.data;
     } catch (error) {
-        console.log(error.response);
+        console.error(error.response);
         return {itemSummaries: []};
     }
 }
@@ -90,12 +90,12 @@ async function ebayFeed$(categoryId) {
         },
     };
     try {
-        console.log(request);
+        console.error(request);
         const instance = axios.create(request);
         const response = await instance.request(request);
-        console.log(JSON.stringify(response.data));
+        console.error(JSON.stringify(response.data));
     } catch (error) {
-        console.log(JSON.stringify(error.response.data));
+        console.error(JSON.stringify(error.response.data));
     }
 }
 
