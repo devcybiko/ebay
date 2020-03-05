@@ -158,7 +158,7 @@ async function getIpadSummaries$(start, limit) {
 }
 
 async function main$() {
-    console.log(`id,price,condition,style,gen,size,gb,model,time,year,wifi,cellular,unlocked,color,url`);
+    console.log(`style,gen,storage,price,condition,size,model,time,year,wifi,cellular,unlocked,color,id,url`);
     let results = [];
     let start = 0;
     let count = 100;
