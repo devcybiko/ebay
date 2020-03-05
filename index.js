@@ -162,7 +162,7 @@ async function main$() {
     let results = [];
     let start = 0;
     let count = 100;
-    let max = 100;
+    let max = 10000;
     for(let start = 0; results.length < max; start += count) {
         // console.error(start);
         let ipads = await getIpadSummaries$(start,count);
