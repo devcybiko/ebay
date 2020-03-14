@@ -66,7 +66,7 @@ async function ebayGroup$(url) {
         const instance = axios.create(request);
         const response = await instance.request(request);
         if (!response.data) {
-            console.error(response);
+            // console.error(response);
             return {itemSummaries: []};
         }
         return response.data;
@@ -100,7 +100,7 @@ async function ebayFeed$(categoryId) {
 }
 
 
-async function getIpadSummaries$(start, limit) {
+async function getEbaySummaries$(start, limit) {
     const tabletCategory = `58058`;
     const results = [];
     let titles = [];
@@ -158,17 +158,16 @@ async function getIpadSummaries$(start, limit) {
 }
 
 async function main$() {
-    console.log(`style,gen,storage,price,condition,size,model,time,year,wifi,cellular,unlocked,color,id,url`);
     let results = [];
     let start = 0;
     let count = 100;
     let max = 10000;
     for(let start = 0; results.length < max; start += count) {
         // console.error(start);
-        let ipads = await getIpadSummaries$(start,count);
+        let items = await getEbaySummaries$(start,count);
         // console.error(ipads.length);
-        if (!ipads || ipads.length === 0) break;
-        results = results.concat(ipads);
+        if (!items || items.length === 0) break;
+        results = results.concat(items);
         start += count;
         console.error(results.length);
     }
