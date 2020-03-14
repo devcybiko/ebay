@@ -10,10 +10,10 @@ module.exports = async function (start, limit, ebaySearch$, ebayGroup$) {
         // console.error(JSON.stringify(item, null, 2));
         if (item.itemGroupType) {
             titles.push(item.title);
-            console.error(`**${item.title}`);
-            console.error(JSON.stringify(item, null, 2));
+            // console.error(`**${item.title}`);
+            // console.error(JSON.stringify(item, null, 2));
             let result = await ebayGroup$(item.itemGroupHref);
-            console.error(result.items.map(item => item.localizedAspects));
+            // console.error(result.items.map(item => item.localizedAspects));
             //console.error(`  ${item.itemId} ${item.itemWebUrl} ${item.buyingOptions[0]} ${item.price.value} ${item.condition} ${item.color}`);
         } else {
             //console.error(`${item.title}`);
@@ -54,6 +54,6 @@ module.exports = async function (start, limit, ebaySearch$, ebayGroup$) {
             results.push(Object.values(ipad).join(",").toLowerCase());
         }
     });
-    console.error(titles.sort());
+    // console.error(titles.sort());
     return results;
 }
