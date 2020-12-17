@@ -4,6 +4,10 @@ const files = require('glstools').files;
 
 const authToken = files.read('./ebaytoken.txt').trim();
 
+replaceAll = function (target, search, replacement) {
+    return target.replace(new RegExp(search, 'g'), replacement);
+}
+
 async function ebayCategoryTree$() {
     const url = `https://api.ebay.com/commerce/taxonomy/v1_beta/category_tree/0`;
     const request = {
@@ -22,7 +26,7 @@ async function ebayCategoryTree$() {
     }
 }
 
-async function ebaySearch$(categoryId, query, start=0, limit=100) {
+async function ebaySearch$(categoryId, query, start = 0, limit = 100) {
     const url = `https://api.ebay.com/buy/browse/v1/item_summary/search`;
     const request = {
         method: 'get',
@@ -44,12 +48,12 @@ async function ebaySearch$(categoryId, query, start=0, limit=100) {
         const response = await instance.request(request);
         if (!response.data) {
             console.error(response);
-            return {itemSummaries: []};
+            return { itemSummaries: [] };
         }
         return response.data;
     } catch (error) {
         console.error(error.response);
-        return {itemSummaries: []};
+        return { itemSummaries: [] };
     }
 }
 
@@ -67,12 +71,12 @@ async function ebayGroup$(url) {
         const response = await instance.request(request);
         if (!response.data) {
             // console.error(response);
-            return {itemSummaries: []};
+            return { itemSummaries: [] };
         }
         return response.data;
     } catch (error) {
         console.error(error.response);
-        return {itemSummaries: []};
+        return { itemSummaries: [] };
     }
 }
 
@@ -99,23 +103,30 @@ async function ebayFeed$(categoryId) {
     }
 }
 
+//
+// https://www.isoldwhat.com/?RootID=99 - categories
+//
 async function main$() {
-    let getEbaySummariesFname = process.argv[2];
+    let getEbaySummariesFname = process.argv[2]; // root filename eg: ipad.js & ipad.json
     let getEbaySummaries$ = require(getEbaySummariesFname);
     let results = [];
-    let start = 0;
     let count = 100;
     let max = 10000;
-    for(let start = 0; results.length < max; start += count) {
+    for (let start = 0; results.length < max; start += count) {
         // console.error(start);
-        let items = await getEbaySummaries$(start,count, ebaySearch$, ebayGroup$);
-        // console.error(ipads.length);
+        let items = await getEbaySummaries$(start, count, ebaySearch$, ebayGroup$);
         if (!items || items.length === 0) break;
         results = results.concat(items);
         start += count;
-        console.error(results.length);
+        console.error(`${results.length} / ${items.total}`);
     }
     console.log(results.join('\n'));
 }
 
-main$();
+async function run$() {
+    console.error(new Date());
+    await main$();
+    console.error(new Date());
+}
+
+run$();

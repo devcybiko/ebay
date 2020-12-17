@@ -1,1 +1,1 @@
-node index.js ./ipad > ipad.csv
+node index.js ./iphone > iphone.csv
